@@ -1,0 +1,88 @@
+---
+import Logos from "./LogosContacto.astro";
+import Titulo from "./inicio/Titulo.astro";
+import Imagen from "./inicio/Imagen.astro";
+---
+
+<div class="inicio" id="Inicio">
+    <div class="tituloEimagen">
+        <div class="titulo">
+            <Titulo/>
+        </div>
+        <div class="imagen">
+            <Imagen/>
+        </div>
+    </div>
+    <div class="inicio_cont_logos">
+        <div class="logosInicio">
+            <Logos/>
+        </div>
+    </div>
+</div>
+
+<style>
+    .inicio{
+        background-color: #D9D9D9;
+        padding: 180px 40px 65px;
+        
+    }
+    .titulo{
+        animation: entrarIzquierda .8s ease;
+    }
+    .imagen{
+        padding-top: 20px;
+        animation: entrarDerecha .8s ease;
+    }
+    .tituloEimagen{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .inicio_cont_logos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 60px 0;
+    }
+    .logosInicio{
+        display: inline;
+        width: 450px;
+
+        
+    }
+
+    @media screen and (max-width:900px){
+        .inicio{
+            padding: 140px 0px 65px;
+            width: 100%;
+        }
+        .tituloEimagen{
+            flex-direction: column;
+        }
+        .logosInicio{
+            justify-content: center;
+            width: 100%;
+            padding: 60px 30%;
+        }
+
+    }
+
+    @keyframes entrarIzquierda{
+        from{
+            transform: translateX(-200%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes entrarDerecha{
+        from{
+            transform: translateX(200%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+
+</style>

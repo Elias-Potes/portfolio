@@ -1,0 +1,51 @@
+---
+import Logos from "./LogosContacto.astro";
+---
+
+<div class="tec_contenedor">
+    <div class="tec_cont">
+        <h3 class="tec_h3">Habilidades</h3>
+        <div class="tec_fondo">
+            <div class="tec_contenido">
+                <img class="tec_icons" src="https://skillicons.dev/icons?i=html,css,javascript,vue,git,vite,astro,vscode&perline=4" />
+            </div>
+        </div>
+        <div class="tec_logos">
+            <Logos/>
+        </div>
+    </div>
+</div>
+
+<style>
+    .tec_contenedor{
+    display: flex;
+    justify-content: center;
+}
+.tec_h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #1D0070;
+
+}
+.tec_fondo{
+    display: flex;
+    justify-content: center;
+}
+.tec_contenido{
+    border: 5px solid #1D0070;
+    
+}
+.tec_icons{
+    width: 300px;
+    background-color: #CBCBCB;
+    border: 2px solid #000000;
+    padding: 1em;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+.tec_logos{
+    margin: 90px 0;
+}
+</style>

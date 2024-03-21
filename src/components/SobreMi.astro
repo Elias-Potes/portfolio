@@ -1,0 +1,86 @@
+---
+import Tecnologias from "./Tecnologias.astro";
+---
+
+<div class="sobreMi"  id="sobreMi">
+    <div class="sobreMi_cont">
+      <Tecnologias />
+      <div class="sobreMi_texto">
+        <h2 class="sobreMi_h2">Sobre Mi</h2>
+        <div class="sobreMi_texto_cont">
+          <div class="contenedor_svg">
+            <svg
+              class="svg_barra"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+            </svg>
+          </div>
+          <p class="sobreMi_p">
+            Soy Elias Potes, desarrollador Front-End Junior de 21 años.
+            <br /> <br />
+             Me considero una persona responsable, puntual y
+            colaboradora, con una insaciable curiosidad por aprender cosas
+            nuevas. Disfruto asumiendo nuevos proyectos y desafíos.
+            <br /> <br />
+            Cuando no estoy frente a la computadora, disfruto de pasar
+            tiempo con mi familia y amigos, viendo fútbol y trabajando en mi
+            jardín con mis bonsáis.
+            <br /> <br />
+            Estoy siempre abierto a nuevas oportunidades laborales que me
+            permitan contribuir, aprender y crecer. Si tienes una oportunidad
+            que coincida con mis habilidades y experiencia, no dudes en
+            ponerte en contacto conmigo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<style>
+.sobreMi{
+    background-color: #CBCBCB;
+    padding: 10% 0;
+}
+.sobreMi_cont{
+    display: flex;  
+    justify-content: space-evenly;
+    padding: 40px;
+    align-items: center;
+}
+.sobreMi_texto{
+    max-width: 480px;
+}
+.sobreMi_h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.sobreMi_texto_cont{
+    font-size: 18px;
+    display: flex;
+}
+.sobreMi_p{
+    text-align: left;
+    display: block;
+}
+.contenedor_svg{
+    display: inline;
+    height: 100%;
+    float: left;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:900px){
+    .sobreMi_cont{
+        flex-direction: column;
+    }  
+    .sobreMi_texto{
+        margin-top: 40px;
+    }
+}
+</style>
